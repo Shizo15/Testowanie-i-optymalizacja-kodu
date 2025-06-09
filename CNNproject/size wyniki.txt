@@ -1,0 +1,263 @@
+96x96
+              precision    recall  f1-score   support
+
+        Alex       0.33      1.00      0.50         6
+      Gloria       0.25      0.05      0.08        21
+       Marty       0.55      0.67      0.60         9
+      Melman       0.41      0.50      0.45        14
+
+    accuracy                           0.40        50
+   macro avg       0.39      0.55      0.41        50
+weighted avg       0.36      0.40      0.33        50
+
+128x128
+              precision    recall  f1-score   support
+
+        Alex       0.35      1.00      0.52         6
+      Gloria       0.73      0.52      0.61        21
+       Marty       0.50      0.44      0.47         9
+      Melman       0.50      0.36      0.42        14
+
+    accuracy                           0.52        50
+   macro avg       0.52      0.58      0.51        50
+weighted avg       0.58      0.52      0.52        50
+
+160x160
+ precision    recall  f1-score   support
+
+        Alex       0.15      1.00      0.26         6
+      Gloria       0.00      0.00      0.00        21
+       Marty       0.00      0.00      0.00         9
+      Melman       0.33      0.21      0.26        14
+
+    accuracy                           0.18        50
+   macro avg       0.12      0.30      0.13        50
+weighted avg       0.11      0.18      0.10        50
+
+224x224
+              precision    recall  f1-score   support
+
+        Alex       1.00      0.50      0.67         6
+      Gloria       1.00      0.29      0.44        21
+       Marty       0.38      0.56      0.45         9
+      Melman       0.46      0.93      0.62        14
+
+    accuracy                           0.54        50
+   macro avg       0.71      0.57      0.55        50
+weighted avg       0.74      0.54      0.52        50
+
+256x256
+              precision    recall  f1-score   support
+
+        Alex       0.00      0.00      0.00         6
+      Gloria       1.00      0.05      0.09        21
+       Marty       1.00      0.56      0.71         9
+      Melman       0.32      1.00      0.48        14
+
+    accuracy                           0.40        50
+   macro avg       0.58      0.40      0.32        50
+weighted avg       0.69      0.40      0.30        50
+
+
+BATCH SIZE
+32
+              precision    recall  f1-score   support
+
+        Alex       0.33      0.17      0.22         6
+      Gloria       0.73      0.38      0.50        21
+       Marty       0.00      0.00      0.00         9
+      Melman       0.31      0.79      0.44        14
+
+    accuracy                           0.40        50
+   macro avg       0.34      0.33      0.29        50
+weighted avg       0.43      0.40      0.36        50
+
+64
+              precision    recall  f1-score   support
+
+        Alex       0.00      0.00      0.00         6
+      Gloria       0.00      0.00      0.00        21
+       Marty       0.17      0.33      0.22         9
+      Melman       0.22      0.50      0.30        14
+
+    accuracy                           0.20        50
+   macro avg       0.10      0.21      0.13        50
+weighted avg       0.09      0.20      0.13        50
+
+128
+
+              precision    recall  f1-score   support
+
+        Alex       0.10      0.50      0.16         6
+      Gloria       1.00      0.10      0.17        21
+       Marty       0.24      0.44      0.31         9
+      Melman       0.00      0.00      0.00        14
+
+    accuracy                           0.18        50
+   macro avg       0.33      0.26      0.16        50
+weighted avg       0.47      0.18      0.15        50
+
+MODELE
+
+VGG16
+            precision    recall  f1-score   support
+
+        Alex       0.80      0.67      0.73         6
+      Gloria       0.82      0.67      0.74        21
+       Marty       0.32      0.78      0.45         9
+      Melman       0.33      0.14      0.20        14
+
+    accuracy                           0.54        50
+   macro avg       0.57      0.56      0.53        50
+weighted avg       0.59      0.54      0.53        50
+
+ResNet101
+
+            precision    recall  f1-score   support
+
+        Alex       0.14      1.00      0.24         6
+      Gloria       1.00      0.24      0.38        21
+       Marty       0.00      0.00      0.00         9
+      Melman       0.00      0.00      0.00        14
+
+    accuracy                           0.22        50
+   macro avg       0.28      0.31      0.16        50
+weighted avg       0.44      0.22      0.19        50
+
+Inception v3
+
+              precision    recall  f1-score   support
+
+        Alex       0.28      0.83      0.42         6
+      Gloria       0.69      0.52      0.59        21
+       Marty       0.43      0.67      0.52         9
+      Melman       0.50      0.07      0.12        14
+
+    accuracy                           0.46        50
+   macro avg       0.47      0.52      0.41        50
+weighted avg       0.54      0.46      0.43        50
+
+
+
+mobilenet
+
+              precision    recall  f1-score   support
+
+        Alex       0.12      0.67      0.20         6
+      Gloria       0.67      0.10      0.17        21
+       Marty       0.42      0.56      0.48         9
+      Melman       1.00      0.07      0.13        14
+
+    accuracy                           0.24        50
+   macro avg       0.55      0.35      0.24        50
+weighted avg       0.65      0.24      0.22        50
+
+
+C:\Users\Damian\Desktop\CNNproject\.venv\Scripts\python.exe C:\Users\Damian\Desktop\CNNproject\optimize_hiperparameters.py 
+ClearML Task: overwriting (reusing) task id=bbc5fa43988b4780ab1861ba1a3dcf24
+2025-06-09 17:52:22,140 - clearml.Task - INFO - No repository found, storing script code instead
+ClearML results page: https://app.clear.ml/projects/768405212155465dbb4ecfcf7d511755/experiments/bbc5fa43988b4780ab1861ba1a3dcf24/output/log
+2025-06-09 17:52:29,627 - clearml.automation.optimization - WARNING - Could not find requested hyper-parameters ['batch_size', 'dropout', 'img_shape', 'epochs', 'model_name', 'transfer_learning', 'normalization', 'augmentation', 'extra_data'] on base task 24ebbc04e92a41449fd44ef2ddeb97ba
+Progress report #0 completed, sleeping for 0.25 minutes
+2025-06-09 17:52:33,963 - clearml.automation.optimization - INFO - Creating new Task: {'batch_size': 48.0, 'dropout': 0.4, 'img_shape': 128.0, 'epochs': 5.0, 'model_name': 'mobilenet', 'transfer_learning': False, 'normalization': False, 'augmentation': False, 'extra_data': False}
+2025-06-09 17:52:38,746 - clearml.automation.optimization - INFO - Creating new Task: {'batch_size': 48.0, 'dropout': 0.1, 'img_shape': 128.0, 'epochs': 5.0, 'model_name': 'vgg16', 'transfer_learning': False, 'normalization': True, 'augmentation': False, 'extra_data': False}
+Progress report #1 completed, sleeping for 0.5 minutes
+Progress report #2 completed, sleeping for 0.5 minutes
+Progress report #3 completed, sleeping for 0.5 minutes
+Progress report #4 completed, sleeping for 0.5 minutes
+Progress report #5 completed, sleeping for 0.5 minutes
+Progress report #6 completed, sleeping for 0.5 minutes
+Progress report #7 completed, sleeping for 0.5 minutes
+Progress report #8 completed, sleeping for 0.5 minutes
+Progress report #9 completed, sleeping for 0.5 minutes
+Progress report #10 completed, sleeping for 0.5 minutes
+Progress report #11 completed, sleeping for 0.5 minutes
+Progress report #12 completed, sleeping for 0.5 minutes
+Progress report #13 completed, sleeping for 0.5 minutes
+Progress report #14 completed, sleeping for 0.5 minutes
+Progress report #15 completed, sleeping for 0.5 minutes
+Progress report #16 completed, sleeping for 0.5 minutes
+Progress report #17 completed, sleeping for 0.5 minutes
+Progress report #18 completed, sleeping for 0.5 minutes
+Progress report #19 completed, sleeping for 0.5 minutes
+Progress report #20 completed, sleeping for 0.5 minutes
+Progress report #21 completed, sleeping for 0.5 minutes
+Progress report #22 completed, sleeping for 0.5 minutes
+Progress report #23 completed, sleeping for 0.5 minutes
+Progress report #24 completed, sleeping for 0.5 minutes
+Progress report #25 completed, sleeping for 0.5 minutes
+Progress report #26 completed, sleeping for 0.5 minutes
+Progress report #27 completed, sleeping for 0.5 minutes
+Progress report #28 completed, sleeping for 0.5 minutes
+Progress report #29 completed, sleeping for 0.5 minutes
+Progress report #30 completed, sleeping for 0.5 minutes
+Progress report #31 completed, sleeping for 0.5 minutes
+Progress report #32 completed, sleeping for 0.5 minutes
+Progress report #33 completed, sleeping for 0.5 minutes
+Progress report #34 completed, sleeping for 0.5 minutes
+Progress report #35 completed, sleeping for 0.5 minutes
+Progress report #36 completed, sleeping for 0.5 minutes
+Progress report #37 completed, sleeping for 0.5 minutes
+Progress report #38 completed, sleeping for 0.5 minutes
+Progress report #39 completed, sleeping for 0.5 minutes
+Progress report #40 completed, sleeping for 0.5 minutes
+Progress report #41 completed, sleeping for 0.5 minutes
+Progress report #42 completed, sleeping for 0.5 minutes
+Progress report #43 completed, sleeping for 0.5 minutes
+Progress report #44 completed, sleeping for 0.5 minutes
+Progress report #45 completed, sleeping for 0.5 minutes
+Progress report #46 completed, sleeping for 0.5 minutes
+Progress report #47 completed, sleeping for 0.5 minutes
+Progress report #48 completed, sleeping for 0.5 minutes
+Progress report #49 completed, sleeping for 0.5 minutes
+Progress report #50 completed, sleeping for 0.5 minutes
+Progress report #51 completed, sleeping for 0.5 minutes
+Progress report #52 completed, sleeping for 0.5 minutes
+Progress report #53 completed, sleeping for 0.5 minutes
+Progress report #54 completed, sleeping for 0.5 minutes
+Progress report #55 completed, sleeping for 0.5 minutes
+Progress report #56 completed, sleeping for 0.5 minutes
+Progress report #57 completed, sleeping for 0.5 minutes
+Progress report #58 completed, sleeping for 0.034163808822631835 minutes
+
+=== Najlepszy eksperyment ===
+Task ID: 9ff59154189c4d93aa2e34e08746838d
+Hiperparametry:
+  TF_DEFINE/logtostderr: False
+  TF_DEFINE/alsologtostderr: False
+  TF_DEFINE/log_dir: 
+  TF_DEFINE/v: -1
+  TF_DEFINE/verbosity: -1
+  TF_DEFINE/logger_levels: {}
+  TF_DEFINE/stderrthreshold: fatal
+  TF_DEFINE/showprefixforinfo: True
+  TF_DEFINE/run_with_pdb: False
+  TF_DEFINE/pdb_post_mortem: False
+  TF_DEFINE/pdb: False
+  TF_DEFINE/run_with_profiling: False
+  TF_DEFINE/profile_file: 
+  TF_DEFINE/use_cprofile_for_profiling: True
+  TF_DEFINE/only_check_args: False
+  TF_DEFINE/op_conversion_fallback_to_while_loop: True
+  TF_DEFINE/delta_threshold: 0.5
+  TF_DEFINE/tt_check_filter: False
+  TF_DEFINE/tt_single_core_summaries: False
+  TF_DEFINE/runtime_oom_exit: True
+  TF_DEFINE/hbm_oom_exit: True
+  TF_DEFINE/test_srcdir: 
+  TF_DEFINE/test_tmpdir: C:\Users\Damian\AppData\Local\Temp\absl_testing
+  TF_DEFINE/test_random_seed: 301
+  TF_DEFINE/test_randomize_ordering_seed: 
+  TF_DEFINE/xml_output_file: 
+  General/model_name: mobilenet
+  General/img_shape: 128.0
+  General/batch_size: 48.0
+  General/transfer_learning: False
+  General/normalization: False
+  General/augmentation: False
+  General/dropout: 0.4
+  General/extra_data: False
+  General/epochs: 5.0
+Najlepsza val_accuracy: brak danych
+
+Process finished with exit code 0
